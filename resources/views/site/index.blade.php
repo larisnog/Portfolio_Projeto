@@ -15,28 +15,8 @@
     <link rel="stylesheet" href="{{ url('/assets/css/fonts.css') }}">
   </head>
   <body>
-    <div class="preloader">
-      <div class="cssload-container">
-        <svg class="filter" version="1.1">
-          <defs>
-            <filter id="gooeyness">
-              <fegaussianblur in="SourceGraphic" stddeviation="10" result="blur"></fegaussianblur>
-              <fecolormatrix in="blur" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -10" result="gooeyness"></fecolormatrix>
-              <fecomposite in="SourceGraphic" in2="gooeyness" operator="atop"></fecomposite>
-            </filter>
-          </defs>
-        </svg>
-        <div class="dots">
-          <div class="dot mainDot"></div>
-          <div class="dot"></div>
-          <div class="dot"></div>
-          <div class="dot"></div>
-          <div class="dot"></div>
-        </div>
-        <p>Loading...</p>
-      </div>
-    </div>
     <!-- Page-->
+      <header class="page-header">
         <!-- RD Navbar-->
         <div class="rd-navbar-wrap">
           <nav class="rd-navbar rd-navbar_transparent rd-navbar_boxed" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-sm-device-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-xl-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static" data-stick-up-clone="false" data-sm-stick-up="true" data-md-stick-up="true" data-lg-stick-up="true" data-md-stick-up-offset="115px" data-lg-stick-up-offset="35px" data-body-class="rd-navbar-absolute">
@@ -127,13 +107,13 @@
             <div class="swiper-slide-caption text-center context-dark">
               <h1 data-swiper-anime="{ &quot;animation&quot;: &quot;swiperContentStack&quot;, &quot;duration&quot;: 1000, &quot;delay&quot;: 500 }">Element</h1>
               <h3 data-swiper-anime="{ &quot;animation&quot;: &quot;swiperContentStack&quot;, &quot;duration&quot;: 1000, &quot;delay&quot;: 600 }">New HTML Templates Generation</h3>
-              <div class="group-lg group-middle" data-swiper-anime="{ &quot;animation&quot;: &quot;swiperContentStack&quot;, &quot;duration&quot;: 1000, &quot;delay&quot;: 700 }"><a class="button button-primary button-shadow" href="#features" data-custom-scroll-to="features">See Features</a><a class="button button-black button-shadow" href="#">Buy template</a></div>
+              <div class="group-lg group-middle" data-swiper-anime="{ &quot;animation&quot;: &quot;swiperContentStack&quot;, &quot;duration&quot;: 1000, &quot;delay&quot;: 700 }"></div>
             </div>
           </div>
           <div class="swiper-slide">
             <div class="swiper-slide-img" style="background-image: url(images/slider-slide-6-1920x986.jpg);" data-swiper-anime="{ &quot;animation&quot;: &quot;swiperSlideRotate&quot;, &quot;duration&quot;: 2000, &quot;delay&quot;: 600 }"></div>
             <div class="swiper-slide-caption context-dark">
-              <h2 data-swiper-anime="{ &quot;animation&quot;: &quot;swiperContentStack&quot;, &quot;duration&quot;: 1000, &quot;delay&quot;: 500 }">The Power of Bootstrap<br class="d-none d-lg-block"> Discover it with Element</h2><a class="button button-primary button-shadow" href="#" data-swiper-anime="{ &quot;animation&quot;: &quot;swiperContentStack&quot;, &quot;duration&quot;: 1000, &quot;delay&quot;: 700 }">Buy template</a>
+              <h2 data-swiper-anime="{ &quot;animation&quot;: &quot;swiperContentStack&quot;, &quot;duration&quot;: 1000, &quot;delay&quot;: 500 }">The Power of Bootstrap<br class="d-none d-lg-block"> Discover it with Element</h2>
             </div>
           </div>
           <div class="swiper-slide">
@@ -144,7 +124,7 @@
                   <div class="col-lg-7">
                     <h2 data-swiper-anime="{ &quot;animation&quot;: &quot;swiperContentStack&quot;, &quot;duration&quot;: 1000, &quot;delay&quot;: 500 }">Built by geeks & used by humans</h2>
                     <h5 class="text-width-2 block-centered" data-swiper-anime="{ &quot;animation&quot;: &quot;swiperContentStack&quot;, &quot;duration&quot;: 1000, &quot;delay&quot;: 600 }">Element aims to satisfy real needs of real projects. We've got a pack of tools for that.</h5>
-                    <div class="group-lg group-middle" data-swiper-anime="{ &quot;animation&quot;: &quot;swiperContentStack&quot;, &quot;duration&quot;: 1000, &quot;delay&quot;: 700 }"><a class="button button-black button-shadow" href="#features" data-custom-scroll-to="features">See Features</a><a class="button button-primary button-shadow" href="#">Buy template</a></div>
+                    <div class="group-lg group-middle" data-swiper-anime="{ &quot;animation&quot;: &quot;swiperContentStack&quot;, &quot;duration&quot;: 1000, &quot;delay&quot;: 700 }"></div>
                   </div>
                 </div>
               </div>
@@ -155,290 +135,7 @@
         <div class="swiper-button-prev linear-icon-chevron-left"></div>
         <div class="swiper-button-next linear-icon-chevron-right"></div>
       </div>
-      <section class="section-xs section-cta bg-gray-dark text-center text-md-left">
-        <div class="container">
-          <div class="row row-30 justify-content-between align-items-center">
-            <div class="col-12 col-md-8">
-              <h4>Like What We Offer?</h4>
-              <p>Start with this demo now or check out the others in the full version of this template.</p>
-            </div>
-            <div class="col-12 col-md-4 text-md-right"><a class="button button-primary" href="about.html">Read more</a></div>
-          </div>
-        </div>
-      </section>
-      <!-- About us-->
-      <section class="bg-gray-lighter object-wrap">
-        <div class="bg-decor d-flex align-items-center justify-content-start" data-parallax-scroll="{&quot;y&quot;: 50,  &quot;smoothness&quot;: 30}"><img src="{{ url('/assets/images/bg-decor-4.png') }}" alt=""/>
-        </div>
-        <div class="section-lg">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-5">
-                <h4 class="heading-decorated">About us</h4>
-                <p>Element boasts clean and crispy design, bulletproof layout consistency and intuitive navigation. The template was created by top industry leaders in web design and user experience. Improve your audience engagement and loyalty with simple and user friendly tools offered by our template.</p>
-                <div class="row row-30">
-                  <div class="col-xl-6">
-                    <!-- Blurb minimal-->
-                    <article class="blurb blurb-minimal">
-                      <div class="unit flex-row unit-spacing-md">
-                        <div class="unit-left">
-                          <div class="blurb-minimal__icon"><span class="icon linear-icon-menu3"></span></div>
-                        </div>
-                        <div class="unit-body">
-                          <p class="blurb__title heading-6"><a href="#">Award-winning designs</a></p>
-                          <p>We have received numerous awards for our designs, concepts, and ideas.</p>
-                        </div>
-                      </div>
-                    </article>
-                  </div>
-                  <div class="col-xl-6">
-                    <!-- Blurb minimal-->
-                    <article class="blurb blurb-minimal">
-                      <div class="unit flex-row unit-spacing-md">
-                        <div class="unit-left">
-                          <div class="blurb-minimal__icon"><span class="icon linear-icon-users2"></span></div>
-                        </div>
-                        <div class="unit-body">
-                          <p class="blurb__title heading-6"><a href="#">Expert team</a></p>
-                          <p>We are a team of dedicated web design and development professionals.</p>
-                        </div>
-                      </div>
-                    </article>
-                  </div>
-                </div>
-                <div class="row justify-content-md-center">
-                  <div class="col-md-12">
-                    <!-- Linear progress bar-->
-                    <div class="progress-linear progress-linear-modern">
-                      <div class="progress-header">
-                        <p>Dedication</p><span class="progress-value">49</span>
-                      </div>
-                      <div class="progress-bar-linear-wrap">
-                        <div class="progress-bar-linear"></div>
-                      </div>
-                    </div>
-                    <!-- Linear progress bar-->
-                    <div class="progress-linear progress-linear-modern">
-                      <div class="progress-header">
-                        <p>Experience</p><span class="progress-value">29</span>
-                      </div>
-                      <div class="progress-bar-linear-wrap">
-                        <div class="progress-bar-linear"></div>
-                      </div>
-                    </div>
-                    <!-- Linear progress bar-->
-                    <div class="progress-linear progress-linear-modern">
-                      <div class="progress-header">
-                        <p>Creativity</p><span class="progress-value">86</span>
-                      </div>
-                      <div class="progress-bar-linear-wrap">
-                        <div class="progress-bar-linear"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="object-wrap__body object-wrap__body-sizing-1 object-wrap__body-md-right bg-image" style="background-image: url(images/bg-image-1.jpg)"></div>
-      </section>
-      <!-- Our Services-->
-      <section class="section-md bg-default text-center decor-text" id="features" data-content="Services">
-        <div class="bg-decor d-flex align-items-center" data-parallax-scroll="{&quot;x&quot;: 80,  &quot;smoothness&quot;: 30}"><img src="{{ url('/assets/images/bg-decor-1.png') }}" alt=""/>
-        </div>
-        <div class="container">
-          <h4 class="heading-decorated">Our Services</h4>
-          <div class="row row-50 justify-content-md-center justify-content-lg-start text-left">
-            <div class="col-md-6 col-xl-4">
-              <!-- Blurb circle-->
-              <article class="blurb blurb-minimal">
-                <div class="unit flex-row unit-spacing-md">
-                  <div class="unit-left">
-                    <div class="blurb-minimal__icon"><span class="icon linear-icon-pencil-ruler"></span></div>
-                  </div>
-                  <div class="unit-body">
-                    <p class="blurb__title heading-6"><a href="#">Bootstrap Framework</a></p>
-                    <p>Element is based on Bootstrap Framework, which makes it a nice template for any purpose.</p>
-                  </div>
-                </div>
-              </article>
-            </div>
-            <div class="col-md-6 col-xl-4">
-              <!-- Blurb circle-->
-              <article class="blurb blurb-minimal">
-                <div class="unit flex-row unit-spacing-md">
-                  <div class="unit-left">
-                    <div class="blurb-minimal__icon"><span class="icon linear-icon-users"></span></div>
-                  </div>
-                  <div class="unit-body">
-                    <p class="blurb__title heading-6"><a href="#">Novi Builder</a></p>
-                    <p>Use our Novi Builder to customize and update your website within seconds.</p>
-                  </div>
-                </div>
-              </article>
-            </div>
-            <div class="col-md-6 col-xl-4">
-              <!-- Blurb circle-->
-              <article class="blurb blurb-minimal">
-                <div class="unit flex-row unit-spacing-md">
-                  <div class="unit-left">
-                    <div class="blurb-minimal__icon"><span class="icon linear-icon-wall"></span></div>
-                  </div>
-                  <div class="unit-body">
-                    <p class="blurb__title heading-6"><a href="#">Responsive & Retina Ready</a></p>
-                    <p>Element looks great on any screen resolution and on any device due to its responsiveness.</p>
-                  </div>
-                </div>
-              </article>
-            </div>
-            <div class="col-md-6 col-xl-4">
-              <!-- Blurb circle-->
-              <article class="blurb blurb-minimal">
-                <div class="unit flex-row unit-spacing-md">
-                  <div class="unit-left">
-                    <div class="blurb-minimal__icon"><span class="icon linear-icon-apartment"></span></div>
-                  </div>
-                  <div class="unit-body">
-                    <p class="blurb__title heading-6"><a href="#">Tons of Tools for Real Needs</a></p>
-                    <p>Event calendar, bookings and schedule  are just some of tools that come on board.</p>
-                  </div>
-                </div>
-              </article>
-            </div>
-            <div class="col-md-6 col-xl-4">
-              <!-- Blurb circle-->
-              <article class="blurb blurb-minimal">
-                <div class="unit flex-row unit-spacing-md">
-                  <div class="unit-left">
-                    <div class="blurb-minimal__icon"><span class="icon linear-icon-home4"></span></div>
-                  </div>
-                  <div class="unit-body">
-                    <p class="blurb__title heading-6"><a href="#">Multiple layouts</a></p>
-                    <p>Huge number of content layouts allow to assemble unique pages with great flexibility.</p>
-                  </div>
-                </div>
-              </article>
-            </div>
-            <div class="col-md-6 col-xl-4">
-              <!-- Blurb circle -->
-              <article class="blurb blurb-minimal">
-                <div class="unit flex-row unit-spacing-md">
-                  <div class="unit-left">
-                    <div class="blurb-minimal__icon"><span class="icon linear-icon-pencil-ruler2"></span></div>
-                  </div>
-                  <div class="unit-body">
-                    <p class="blurb__title heading-6"><a href="#">Clean and Crispy Design</a></p>
-                    <p>Element is crafted by top industry leaders with love, care and customer needs in mind.</p>
-                  </div>
-                </div>
-              </article>
-            </div>
-            <div class="col-md-6 col-lg-4">
-              <!-- Blurb minimal-->
-              <article class="blurb blurb-minimal">
-                <div class="unit flex-row unit-spacing-md">
-                  <div class="unit-left">
-                    <div class="blurb-minimal__icon"><span class="icon linear-icon-magic-wand"></span></div>
-                  </div>
-                  <div class="unit-body">
-                    <p class="blurb__title heading-6"><a href="#">Built For Speed</a></p>
-                    <p>Our template was built for speed. Get the best results at GTmetrix and Google PageSpeed.</p>
-                  </div>
-                </div>
-              </article>
-            </div>
-            <div class="col-md-6 col-lg-4">
-              <!-- Blurb minimal-->
-              <article class="blurb blurb-minimal">
-                <div class="unit flex-row unit-spacing-md">
-                  <div class="unit-left">
-                    <div class="blurb-minimal__icon"><span class="icon linear-icon-menu3"></span></div>
-                  </div>
-                  <div class="unit-body">
-                    <p class="blurb__title heading-6"><a href="#">Flexible and Multipurpose</a></p>
-                    <p>Element allows creating various websites for complex and scalable projects.</p>
-                  </div>
-                </div>
-              </article>
-            </div>
-            <div class="col-md-6 col-lg-4">
-              <!-- Blurb minimal-->
-              <article class="blurb blurb-minimal">
-                <div class="unit flex-row unit-spacing-md">
-                  <div class="unit-left">
-                    <div class="blurb-minimal__icon"><span class="icon linear-icon-users2"></span></div>
-                  </div>
-                  <div class="unit-body">
-                    <p class="blurb__title heading-6"><a href="#">SEO Friendly</a></p>
-                    <p>Valid code and performance optimized framework make SEO easy and hassle free.</p>
-                  </div>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section-md bg-gray-lighter text-center decor-text" data-content="Process">
-        <div class="container">
-          <h4 class="heading-decorated">Our working process</h4>
-          <div class="row row-30 justify-content-center">
-            <div class="col-sm-10 col-lg-6"><img src="{{ url('/assets/images/home-var-2-650x495.jpg') }}" alt="" width="650" height="495"/>
-            </div>
-            <div class="col-sm-10 col-lg-6">
-              <!-- Blurb circle-->
-              <article class="blurb blurb-circle">
-                <div class="unit flex-row unit-spacing-md">
-                  <div class="unit-left">
-                    <div class="blurb-circle__icon"><span class="icon linear-icon-feather"></span></div>
-                  </div>
-                  <div class="unit-body">
-                    <p class="blurb__title heading-6">Design creation</p>
-                    <p>Firstly, our designers create the concept of a template, which can be changed and modified.</p>
-                  </div>
-                </div>
-              </article>
-              <!-- Blurb circle-->
-              <article class="blurb blurb-circle">
-                <div class="unit flex-row unit-spacing-md">
-                  <div class="unit-left">
-                    <div class="blurb-circle__icon"><span class="icon linear-icon-menu3"></span></div>
-                  </div>
-                  <div class="unit-body">
-                    <p class="blurb__title heading-6">Development</p>
-                    <p>Then our developers begin to work on implementing the template’s final look and features.</p>
-                  </div>
-                </div>
-              </article>
-              <!-- Blurb circle-->
-              <article class="blurb blurb-circle">
-                <div class="unit flex-row unit-spacing-md">
-                  <div class="unit-left">
-                    <div class="blurb-circle__icon"><span class="icon linear-icon-bag2"></span></div>
-                  </div>
-                  <div class="unit-body">
-                    <p class="blurb__title heading-6">Testing</p>
-                    <p>Finally, our QA experts make sure that everything works perfectly just as you would expect.</p>
-                  </div>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!--cta-->
-      <!-- Call to Action-->
-      <section class="section-md bg-accent bg-image text-center bg-overlay-darker" style="background-image: url(images/bg-image-8.jpg); background-position: center 50%;">
-        <div class="container">
-          <div class="row justify-content-md-center">
-            <div class="col-md-11 col-lg-9 col-xl-8"> 
-              <h3 class="heading-decorated">Haven’t Found What You Like? Feel free to get in touch</h3><a class="button button-primary" href="contacts.html">Contact Us</a>
-            </div>
-          </div>
-        </div>
-      </section>
-
+     
       <!-- portfolio-->
       <section class="section-md bg-default text-center">
         <div class="bg-decor d-flex align-items-center" data-parallax-scroll="{&quot;y&quot;: 50,  &quot;smoothness&quot;: 30}"><img src="{{ url('/assets/images/bg-decor-6.png') }}" alt=""/>
@@ -563,40 +260,8 @@
           </div>
         </div>
       </section>
-      <section class="section-md text-center bg-default">
-        <div class="bg-decor d-flex align-items-center justify-content-end" data-parallax-scroll="{&quot;y&quot;: 130, &quot;smoothness&quot;: 30}"><img src="{{ url('/assets/images/bg-decor-4.png') }}" alt=""/>
-        </div>
-        <div class="container">
-          <h4 class="heading-decorated">Our Clients</h4>
-          <div class="row row-30">
-            <div class="col-sm-6 col-md-3">
-              <figure class="box-icon-image"><a href="#"><img src="{{ url('/assets/images/company-1-126x102.png') }}" alt="" width="126" height="102"/></a></figure>
-            </div>
-            <div class="col-sm-6 col-md-3">
-              <figure class="box-icon-image"><a href="#"><img src="{{ url('/assets/images/company-2-134x102.png') }}" alt="" width="134" height="102"/></a></figure>
-            </div>
-            <div class="col-sm-6 col-md-3">
-              <figure class="box-icon-image"><a href="#"><img src="{{ url('/assets/images/company-3-132x102.png') }}" alt="" width="132" height="102"/></a></figure>
-            </div>
-            <div class="col-sm-6 col-md-3">
-              <figure class="box-icon-image"><a href="#"><img src="{{ url('/assets/images/company-4-126x102.png') }}" alt="" width="126" height="102"/></a></figure>
-            </div>
-            <div class="col-sm-6 col-md-3">
-              <figure class="box-icon-image"><a href="#"><img src="{{ url('/assets/images/company-5-138x102.png') }}" alt="" width="138" height="102"/></a></figure>
-            </div>
-            <div class="col-sm-6 col-md-3">
-              <figure class="box-icon-image"><a href="#"><img src="{{ url('/assets/images/company-6-143x102.png') }}" alt="" width="143" height="102"/></a></figure>
-            </div>
-            <div class="col-sm-6 col-md-3">
-              <figure class="box-icon-image"><a href="#"><img src="{{ url('/assets/images/company-7-109x102.png') }}" alt="" width="109" height="102"/></a></figure>
-            </div>
-            <div class="col-sm-6 col-md-3">
-              <figure class="box-icon-image"><a href="#"><img src="{{ url('/assets/images/company-8-109x102.png') }}" alt="" width="109" height="102"/></a></figure>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Page Footer--><a class="banner" href="https://www.templatemonster.com/intense-multipurpose-html-template.html" target="_blank"><img src="{{ url('/assets/images/intense_big_02.jpg') }}" alt="" height="0"/></a>
+    
+      <!-- Page Footer-->
       <section class="pre-footer-corporate bg-image-7 bg-overlay-darkest">
         <div class="container">
           <div class="row justify-content-sm-center justify-content-lg-start row-30 row-md-60">
