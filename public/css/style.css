@@ -92,6 +92,11 @@ figure {
 	margin-bottom: 0;
 }
 
+figure img{
+	width: 420px;
+	height: 280px;
+}
+
 html p a:hover {
 	text-decoration: none;
 }
@@ -2039,6 +2044,11 @@ textarea.form-input {
 .list-semicolon > li {
 	display: inline;
 	color: #41516A;
+}
+
+.list-semicolon p {
+	display: inline;
+	color: #ffff;
 }
 
 .list-semicolon a {
