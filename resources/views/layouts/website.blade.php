@@ -2,17 +2,19 @@
 <html class="wide wow-animation" lang="en">
   <head>
     <!-- Site Title-->
-    <title>Home</title>
+    <title>LN - Larissa Nogueira</title>
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
-    <link rel="icon" href="{{ url('/images/favicon.ico') }}" type="image/x-icon">
+    <link rel="icon" href="{{ url('/images/icone_logo.png') }}" type="image/x-icon">
     <!-- Stylesheets-->
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Fira+Sans:300,600,800,800i%7COpen+Sans:300,400,400i">
     <link rel="stylesheet" href="{{ url('/css/bootstrap.css') }}">
     <link rel="stylesheet" href="{{ url('/css/style.css') }}">
     <link rel="stylesheet" href="{{ url('/css/fonts.css') }}">
+    <!-- jQuery Files -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
     @yield('styles')
 
@@ -44,7 +46,7 @@
                           <div class="unit__left"><span class="icon icon-gray-darker fa-whatsapp fa-lg"></span></div>
                           <div class="unit__body">
                             <ul class="list-semicolon">
-                              <li><a href="">+55 51 996462689</a></li>
+                              <li><a href="https://web.whatsapp.com/send?phone=5551996462689" target="_blank">+55 51 996462689</a></li>
                             </ul>
                           </div>
                         </div>
@@ -66,7 +68,7 @@
               <div class="rd-navbar-panel rd-navbar-search-lg_collapsable">
                 <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
                 <!-- RD Navbar Brand-->
-                <div class="rd-navbar-brand"><a class="brand-name" href="index.html"><img src="images/logo.png" alt="" width="344" height="67"/></a></div>
+                <div class="rd-navbar-brand"><img src="images/logo.png" alt="" width="344" height="67"/></a></div>
               </div>
               <!-- RD Navbar Nav-->
               <div class="rd-navbar-nav-wrap rd-navbar-search_not-collapsable">
@@ -113,7 +115,7 @@
                     <dt>Whatsapp</dt>
                     <dd>
                       <ul class="list-semicolon">
-                        <li><a href="tel:#">+55 51 996462689</a></li>
+                        <li><a href="https://web.whatsapp.com/send?phone=5551996462689" target="_blank">+55 51 996462689</a></li>
                       </ul>
                     </dd>
                   </dl>
@@ -143,9 +145,7 @@
         </div>
       </footer>
     </div>
-    <!-- Global Mailform Output-->
-    <div class="snackbars" id="form-output-global"></div>
-    <!-- Javascript-->
+        <!-- Javascript-->
     <script src="{{ url('/js/core.min.js') }}"></script>
     <script src="{{ url('/js/script.js') }}"></script>
 

@@ -92,11 +92,6 @@ figure {
 	margin-bottom: 0;
 }
 
-figure img{
-	width: 420px;
-	height: 280px;
-}
-
 html p a:hover {
 	text-decoration: none;
 }
@@ -1353,22 +1348,6 @@ textarea.form-input {
 	top: 100%;
 	left: 0;
 }
-
-#form-output-global {
-	position: fixed;
-	bottom: 30px;
-	left: 15px;
-	visibility: hidden;
-	transform: translateX(-500px);
-	transition: .3s all ease;
-	z-index: 9999999;
-}
-
-#form-output-global.active {
-	transform: translateX(0);
-	visibility: visible;
-}
-
 @media (min-width: 576px) {
 	#form-output-global {
 		left: 30px;
@@ -8493,7 +8472,7 @@ h4 + .owl-carousel {
 }
 
 .rd-navbar-brand img {
-	max-width: 190px;
+	width: 250px;
 	height: auto;
 }
 

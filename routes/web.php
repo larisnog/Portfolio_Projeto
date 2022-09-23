@@ -20,3 +20,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', 'HomeController@index')->name('site.index');
 Route::get('/portfolio', 'HomeController@portfolio')->name('site.portfolio');
 Route::get('/contato', 'HomeController@contato')->name('site.contato');
+
+Route::post('/envio-contato', 'HomeController@envioContato')->name('site.envio-contato');

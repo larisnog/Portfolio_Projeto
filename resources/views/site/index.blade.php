@@ -63,45 +63,44 @@
         <div class="bg-decor d-flex align-items-center" data-parallax-scroll="{&quot;y&quot;: 50,  &quot;smoothness&quot;: 30}"><img src="{{ url('/images/bg-decor-6.png') }}" alt=""/>
         </div>
         <div class="container">
-          <h4>Portfolio</h4>
-          <h5 class="heading-decorated">Projetos Favoritos</h5>
+          <h4 class="heading-decorated">Portfolio</h4>
           <div class="isotope-wrap row row-70">
             <div class="col-sm-12">
+            <ul class="list-nav isotope-filters isotope-filters-horizontal">
+                <li>Projetos Favoritos</li>
+              </ul>
               <div class="isotope row" data-isotope-layout="fitRows">
-                <div class="col-12 col-md-6 col-lg-4 isotope-item"><a class="img-thumbnail-variant-3" href="{{ url('/images/maes_portfolio_zoom.jpg') }}" data-lightgallery="item">
-                          <figure><img src="{{ url('/images/maes_portfolio.jpg') }}" alt="" width="418" height="315"/>
+                <div class="col-12 col-md-6 col-lg-4 isotope-item"><a class="img-thumbnail-variant-3" href="{{ url('/images/maes_zoom.jpg') }}" data-lightgallery="item">
+                          <figure><img src="{{ url('/images/maes_portfolio.png') }}" alt="" width="418" height="315"/>
                           </figure>
                           <div class="caption"><span class="icon hover-top-element linear-icon-picture"></span>
                             <ul class="list-inline-tag hover-top-element">
-                              <li>Web Design</li>
+                              <li>Site</li>
                             </ul>
-                            <p class="heading-5 hover-top-element">Kreative Co.</p>
+                            <p class="heading-5 hover-top-element">Mães de Joelhos Filhos em Pé</p>
                             <div class="divider"></div>
-                            <p class="small hover-bottom-element">Creative projects &amp; ideas</p><span class="icon arrow-right linear-icon-plus"></span>
                           </div></a>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4 isotope-item"><a class="img-thumbnail-variant-3" href="{{ url('/images/yakso_portfolio_zoom.jpg') }}" data-lightgallery="item">
-                          <figure><img src="{{ url('/images/yakso_portfolio.jpg') }}" alt="" width="418" height="315"/>
+                <div class="col-12 col-md-6 col-lg-4 isotope-item"><a class="img-thumbnail-variant-3" href="{{ url('/images/yakso_zoom.jpg') }}" data-lightgallery="item">
+                          <figure><img src="{{ url('/images/yakso_portfolio.png') }}" alt="" width="418" height="315"/>
                           </figure>
                           <div class="caption"><span class="icon hover-top-element linear-icon-picture"></span>
                             <ul class="list-inline-tag hover-top-element">
-                              <li>Web Development</li>
+                              <li>Site</li>
                             </ul>
-                            <p class="heading-5 hover-top-element">Architex</p>
+                            <p class="heading-5 hover-top-element">Yakso Tecnologia</p>
                             <div class="divider"></div>
-                            <p class="small hover-bottom-element">Creative projects &amp; ideas</p><span class="icon arrow-right linear-icon-plus"></span>
                           </div></a>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4 isotope-item"><a class="img-thumbnail-variant-3" href="{{ url('/images/efenge_portfolio_zoom.jpg') }}" data-lightgallery="item">
-                          <figure><img src="{{ url('/images/efenge_portfolio.jpg') }}" alt="" width="418" height="315"/>
+                <div class="col-12 col-md-6 col-lg-4 isotope-item"><a class="img-thumbnail-variant-3" href="{{ url('/images/efenge_zoom.jpg') }}" data-lightgallery="item">
+                          <figure><img src="{{ url('/images/efenge_portfolio.png') }}" alt="" width="418" height="315"/>
                           </figure>
                           <div class="caption"><span class="icon hover-top-element linear-icon-picture"></span>
                             <ul class="list-inline-tag hover-top-element">
-                              <li>Web Design</li>
+                              <li>Site</li>
                             </ul>
-                            <p class="heading-5 hover-top-element">Colorful Studios</p>
+                            <p class="heading-5 hover-top-element">Efenge Engenharia</p>
                             <div class="divider"></div>
-                            <p class="small hover-bottom-element">Creative projects &amp; ideas</p><span class="icon arrow-right linear-icon-plus"></span>
                           </div></a>
                 </div>               
               </div>

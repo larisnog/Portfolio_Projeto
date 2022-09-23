@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Contato;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -22,5 +23,17 @@ class HomeController extends Controller
     {
         $data = [];
         return view('site.contato', $data);
+    }
+
+    public function envioContato(Request $request){
+        $Contato = new Contato;
+        $Contato->nome           = $request->input('name');
+        $Contato->email          = $request->input('email');
+        $Contato->mensagem       = $request->input('mensagem');
+        $Contato->data           = date('Y-m-d H:i:s');
+        $Contato->save();
+
+        $json = ['status' => true];
+        return response()->json($json);
     }
 }
