@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Contato;
+use App\Models\Comentario;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -32,6 +33,20 @@ class HomeController extends Controller
         $Contato->mensagem       = $request->input('mensagem');
         $Contato->data           = date('Y-m-d H:i:s');
         $Contato->save();
+
+        $json = ['status' => true];
+        return response()->json($json);
+    }
+
+    public function envioComentario(Request $request)
+    {
+            
+            $Comentario = new Comentario;
+            $Comentario->nome          = $request->input('name');
+            $Comentario->email         = $request->input('email');
+            $Comentario->comentario    = $request->input('comentario');
+            $Comentario->data_coment = date('Y-m-d H:i:s');
+            $Comentario->save();
 
         $json = ['status' => true];
         return response()->json($json);

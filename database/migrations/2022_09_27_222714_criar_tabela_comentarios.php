@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CriarTabelaContato extends Migration
+class CriarTabelaComentarios extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,12 @@ class CriarTabelaContato extends Migration
      */
     public function up()
     {
-        Schema::create('contato', function (Blueprint $table){
+        Schema::create('comentario', function (Blueprint $table){
             $table->id();
             $table->increments('id');
             $table->string('nome');
             $table->string('email');
-            $table->text('mensagem');
+            $table->text('comentario');
             $table->timestamps();
         });
     }
@@ -30,6 +30,6 @@ class CriarTabelaContato extends Migration
      */
     public function down()
     {
-        Schema::dropIfExist('contato');
+        Schema::dropIfExist('comentario');
     }
 }

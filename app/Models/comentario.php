@@ -4,15 +4,15 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Contato extends Model
+class Comentario extends Model
 {
-    protected $table = 'contato';
+    protected $table = 'comentario';
     
     public $timestamps = false;
 
     protected $fillable = [
         'nome',
         'email',
-        'mensagem',
+        'comentario',
     ];
 }

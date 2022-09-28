@@ -8,6 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
     <link rel="icon" href="{{ url('/images/icone_logo.png') }}" type="image/x-icon">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <!-- Stylesheets-->
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Fira+Sans:300,600,800,800i%7COpen+Sans:300,400,400i">
     <link rel="stylesheet" href="{{ url('/css/bootstrap.css') }}">

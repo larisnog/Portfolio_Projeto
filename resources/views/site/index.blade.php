@@ -44,7 +44,7 @@
 
       <!--features-->
       <!-- Our Features-->
-      <section class="section-md bg-gray-lighter text-center decor-text" data-content="Services">
+      <section class="section-md bg-gray-lighter text-center decor-text">
         <div class="container">
           <div class="row justify-content-lg-center"> 
             <div class="col-lg-10 col-xl-8">

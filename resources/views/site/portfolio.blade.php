@@ -134,4 +134,100 @@
         </div>
     </section>
 
+    <section class="section-md bg-gray-lighter text-center decor-text">
+        <div class="container">
+          <div class="row justify-content-lg-center"> 
+            <div class="col-lg-10 col-xl-8">
+            @foreach($comentarios as $comentario)
+              <h4 class="heading-decorated">Comentários</h4>
+              
+              <p>{{ $comentario->nome }}</p>
+              <p>Em {{$data_coment }}</p>
+              <p>{{ $comentarios->comentario }}</p>
+              @endforeach
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <section class="section-md bg-default text-center">
+      <div class="col-md-7 col-lg-8 coments">
+          <h4 class="heading-decorated">Escreva um comentário também</h4>
+            <!-- RD Mailform-->
+            <form class="rd-mailform rd-mailform_style-1 form-shadow" method="POST" action="{{ url('/envio-comentario') }}" id="form" onSubmit="return validar()">
+              <div class="form-wrap form-wrap_icon linear-icon-man">
+                <input class="form-input" type="text" placeholder="Seu nome" id="name" name="name">
+              </div>
+              <div class="form-wrap form-wrap_icon linear-icon-envelope">
+                <input class="form-input" type="email" placeholder="Seu email" id="email" name="email">
+              </div>
+              <div class="form-wrap form-wrap_icon linear-icon-feather">
+                <textarea class="form-input" id="comentario" placeholder="Seu comentário" name="comentario"></textarea>
+              </div>
+              <button class="button button-primary button-shadow" type="submit">enviar</button>
+            </form>
+        </div>
+    </section>
+
+@endsection
+
+@section('scripts')
+    <script>
+      function validar(){
+        var nome = document.getElementById('name');
+
+        if(nome.value == ""){
+          alert("Preencha o campo Nome");
+          nome.focus();
+          return false;
+        }
+        if(email.value == ""){
+          alert("Preencha o campo Email");
+          email.focus();
+          return false;
+        }
+        if(comentario.value == ""){
+          alert("Preencha o campo Comentário");
+          comentario.focus();
+          return false;
+        }
+        return true;
+      }
+    </script>
+
+    <script>
+      $(document).ready(function(){
+        $('#form').submit(function(e){
+
+          e.preventDefault();
+
+          var dados = $(this).serialize();
+
+          var url = '{{ url('/envio-comentario') }}';
+
+          var nome = document.getElementById('name');
+
+       $.ajax({
+            headers: {
+              'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            },
+            url: url,
+            type: 'POST',
+            data: dados,
+            success: function(response){
+              console.log(response);
+              if(nome.value != '' && email.value != '' && comentario.value != '' && response.status == true){
+                alert("Comentário enviado com sucesso!");
+                nome.value = '';
+                email.value = '';
+                comentario.value = '';
+              }else if(response.status  == false){
+                alert("Erro ao enviar comentário, revise os campos informados!");
+              }
+            }
+          });
+          return false;
+        });
+      });
+    </script>
 @endsection

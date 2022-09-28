@@ -22,3 +22,4 @@ Route::get('/portfolio', 'HomeController@portfolio')->name('site.portfolio');
 Route::get('/contato', 'HomeController@contato')->name('site.contato');
 
 Route::post('/envio-contato', 'HomeController@envioContato')->name('site.envio-contato');
+Route::post('/envio-comentario', 'HomeController@envioComentario')->name('site.envio-comentario');

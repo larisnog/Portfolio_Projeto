@@ -61,7 +61,7 @@
             <div class="col-md-7 col-lg-8">
               <h4 class="heading-decorated">Mande uma Mensagem</h4>
               <!-- RD Mailform-->
-              <form class="rd-mailform rd-mailform_style-1 form-shadow" method="POST" id="form" onSubmit="return validar()">
+              <form class="rd-mailform rd-mailform_style-1 form-shadow" method="POST" action="{{ url('/envio-contato') }}" id="form" onSubmit="return validar()">
                 <div class="form-wrap form-wrap_icon linear-icon-man">
                   <input class="form-input" type="text" placeholder="Seu nome" id="name" name="name">
                 </div>
@@ -106,7 +106,7 @@
 
     <script>
       $(document).ready(function(){
-        $('#form').submit(function(e){
+			  $('#form').submit(function(e){
 
           e.preventDefault();
 
@@ -139,3 +139,4 @@
         });
       });
     </script>
+@endsection

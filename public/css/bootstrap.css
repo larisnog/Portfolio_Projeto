@@ -593,6 +593,13 @@ pre code {
 	padding-right: 15px;
 	padding-left: 15px;
 }
+.coments{
+	position: relative;
+	left: 15%;
+	right: 10%;
+}
+	
+
 
 .col {
 	flex-basis: 0;
