@@ -137,14 +137,18 @@
     <section class="section-md bg-gray-lighter text-center decor-text">
         <div class="container">
           <div class="row justify-content-lg-center"> 
-            <div class="col-lg-10 col-xl-8">
-            @foreach($comentarios as $comentario)
-              <h4 class="heading-decorated">Comentários</h4>
-              
-              <p>{{ $comentario->nome }}</p>
-              <p>Em {{$data_coment }}</p>
-              <p>{{ $comentarios->comentario }}</p>
-              @endforeach
+            <div class="col-lg-10 col-xl-8 comentarios">
+              <h4 class="heading-decorated">Comentários da página</h4>
+                  @foreach($comentarios as $comentario)
+                  <?php
+                    setlocale(LC_ALL, 'pt_Br', 'pt_BR.utf-8', 'pt_Br.utf-8', 'portuguese');
+                    $comentario->data_coment;
+                    $data_coment = strftime('%d de %B de %Y às %Hh%M', strtotime($comentario->data_coment));
+                  ?>
+                  <p class="name">{{ $comentario->nome }}</p>
+                  <p class="date">Em {{ $data_coment }}</p>
+                  <p class="coment">{{ $comentario->comentario }}</p>
+                  @endforeach
             </div>
           </div>
         </div>

@@ -593,6 +593,23 @@ pre code {
 	padding-right: 15px;
 	padding-left: 15px;
 }
+.comentarios p{
+	font-size: 13px;
+}
+.comentarios .name{
+	margin-top: 30px;
+	text-transform: uppercase;
+	text-align: left;
+	font-weight: bold;
+}
+.comentarios .date{
+	font-style: italic;
+	text-align: left;
+}
+.comentarios .coment{
+	text-align: justify;
+}
+
 .coments{
 	position: relative;
 	left: 15%;

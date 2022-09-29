@@ -17,7 +17,8 @@ class HomeController extends Controller
     public function portfolio()
     {
         $data = [];
-        return view('site.portfolio', $data);
+        $comentarios = Comentario::get();
+        return view('site.portfolio', compact('comentarios'));
     }
 
     public function contato()
