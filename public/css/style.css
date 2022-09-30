@@ -3891,6 +3891,8 @@ a.thumbnail-classic-title:hover {
 	margin-bottom: -5px;
 	margin-left: -10px;
 	margin-right: -10px;
+	position: relative;
+	bottom: 10px;
 }
 
 .post-inline__header > *,
@@ -6124,6 +6126,11 @@ html .page .group-bottom > *, html .page .group-bottom > *:first-child {
 .section-xs,
 .section-sm {
 	padding: 35px 0;
+}
+
+.section-sm h5{
+	position: relative;
+	bottom: 25px;
 }
 
 .section-md,

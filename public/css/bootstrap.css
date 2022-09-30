@@ -616,7 +616,23 @@ pre code {
 	right: 10%;
 }
 	
+.conteudo{
+	position: relative;
+	bottom: 30px;
+}
 
+.conteudo-artigo{
+	height: 160px;
+	overflow: hidden;
+}
+.conteudo-artigo p{
+	text-align: justify;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+  -webkit-line-clamp: 5; 
+  -webkit-box-orient: vertical;
+}
 
 .col {
 	flex-basis: 0;

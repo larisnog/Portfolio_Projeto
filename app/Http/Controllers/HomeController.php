@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Contato;
 use App\Models\Comentario;
+use App\Models\Artigo;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -27,7 +28,15 @@ class HomeController extends Controller
         return view('site.contato', $data);
     }
 
+    public function artigos()
+    {
+        $data = [];
+        $artigos = Artigo::get();
+        return view('site.artigos', compact('artigos'));
+    }
+
     public function envioContato(Request $request){
+
         $Contato = new Contato;
         $Contato->nome           = $request->input('name');
         $Contato->email          = $request->input('email');

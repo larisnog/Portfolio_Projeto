@@ -79,6 +79,8 @@
                     </li>
                     <li><a href="{{ url('/portfolio') }}">Portfolio</a>
                     </li>
+                    <li><a href="{{ url('/artigos') }}">Artigos</a>
+                    </li>
                     <li><a href="{{ url('/contato') }}">Contato</a>
                     </li>
                   </ul>
@@ -105,6 +107,7 @@
               <ul class="list-xxs">
                 <li><a href="{{ url('/') }}">Home</a></li>
                 <li><a href="{{ url('/portfolio') }}">Portfolio</a></li>
+                <li><a href="{{ url('/artigos') }}">Artigos</a>
                 <li><a href="{{ url('/contato') }}">Contato</a></li>
               </ul>
             </div>
