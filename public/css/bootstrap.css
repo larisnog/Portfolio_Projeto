@@ -618,7 +618,10 @@ pre code {
 	
 .conteudo{
 	position: relative;
-	bottom: 30px;
+	bottom: 34px;
+}
+.conteudo .link:hover{
+	color: #80deea;
 }
 
 .conteudo-artigo{

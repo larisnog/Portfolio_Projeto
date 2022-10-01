@@ -17,7 +17,6 @@ class HomeController extends Controller
 
     public function portfolio()
     {
-        $data = [];
         $comentarios = Comentario::get();
         return view('site.portfolio', compact('comentarios'));
     }
@@ -30,9 +29,14 @@ class HomeController extends Controller
 
     public function artigos()
     {
-        $data = [];
         $artigos = Artigo::get();
         return view('site.artigos', compact('artigos'));
+    }
+
+    public function post()
+    {
+        $data = [];
+        return view('site.post', $data);
     }
 
     public function envioContato(Request $request){

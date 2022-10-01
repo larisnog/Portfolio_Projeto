@@ -30,6 +30,7 @@
         <div class="container">
           <div class="row row-50 row-md-75">
             <div class="col-lg-8 section-divided__main">
+              <h4>Artigos Parceiros</h4>
               <!-- Left aligned image-->
               @foreach($artigos as $artigo)
               <?php
@@ -38,7 +39,7 @@
                     $data = strftime('%d de %B de %Y', strtotime($artigo->data));
                   ?>
               <section class="section-sm">
-                  <h5>{{ $artigo->titulo }}</h5>
+                  <h5><a class="cold-md-6 conteudo link" href="">{{ $artigo->titulo }}</a></h5>
                   <div class="post-inline__header"><span class="post-inline__time">{{ $data }}</span><a class="post-inline__author meta-author" href="#">{{ $artigo->autor }}</a></div>
                   <div class="row flex-md-row-reverse row-30">
                     <div class="col-md-6 conteudo conteudo-artigo">
