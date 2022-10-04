@@ -39,14 +39,14 @@
                     $data = strftime('%d de %B de %Y', strtotime($artigo->data));
                   ?>
               <section class="section-sm">
-                  <h5><a class="cold-md-6 conteudo link" href="">{{ $artigo->titulo }}</a></h5>
+                  <h5><a class="cold-md-6 conteudo link" href="{{ url('/artigos/'.$artigo->id) }}">{{ $artigo->titulo }}</a></h5>
                   <div class="post-inline__header"><span class="post-inline__time">{{ $data }}</span><a class="post-inline__author meta-author" href="#">{{ $artigo->autor }}</a></div>
                   <div class="row flex-md-row-reverse row-30">
                     <div class="col-md-6 conteudo conteudo-artigo">
                       <p>{!! $artigo->conteudo !!}</p>
                     </div>
                     <div class="col-md-6 conteudo conteudo-imagem">
-                      <figure class="figure"><img src="{{ url('images/'.$artigo->imagem_red) }}" alt="" width="1500" height="1000"/>
+                      <figure class="figure"><img src="{{ url('images/'.$artigo->imagem) }}" alt="" width="1500" height="1000"/>
                       </figure>
                     </div>
                   </div>

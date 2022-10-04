@@ -33,10 +33,10 @@ class HomeController extends Controller
         return view('site.artigos', compact('artigos'));
     }
 
-    public function post()
+    public function post($id)
     {
-        $data = [];
-        return view('site.post', $data);
+        $post = Artigo::where('id', $id)->first();
+        return view('site.post', compact('post'));
     }
 
     public function envioContato(Request $request){

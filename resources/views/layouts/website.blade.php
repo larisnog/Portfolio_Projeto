@@ -69,7 +69,7 @@
               <div class="rd-navbar-panel rd-navbar-search-lg_collapsable">
                 <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
                 <!-- RD Navbar Brand-->
-                <div class="rd-navbar-brand"><img src="images/logo.png" alt="" width="344" height="67"/></a></div>
+                <div class="rd-navbar-brand"><img src="{{ url('/images/logo.png') }}" alt="" width="344" height="67"/></a></div>
               </div>
               <!-- RD Navbar Nav-->
               <div class="rd-navbar-nav-wrap rd-navbar-search_not-collapsable">

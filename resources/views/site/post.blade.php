@@ -7,17 +7,22 @@
 @endsection
 
 @section('content')
-    
+    <?php
+        setlocale(LC_ALL, 'pt_Br', 'pt_BR.utf-8', 'pt_Br.utf-8', 'portuguese');
+        $post->data;
+        $data = strftime('%d de %B de %Y', strtotime($post->data));
+    ?>
     <div class="section-sm section-divided">
         <div class="container">
             <div class="row row-50 row-md-75">
                 <div class="col-lg-8 section-divided__main">
                     <!-- Large image should always fit-->
-                    <section class="section-sm">
-                        <h5>Large image</h5>
-                        <figure class="figure"><img src="images/typography-1-1500x1000.jpg" alt="" width="1500" height="1000"/>
+                    <section class="section-sm post">
+                        <h5>{{ $post->titulo }}</h5>
+                        <div class="post-inline__header post-info"><span class="post-inline__time">{{ $data }}</span><a class="post-inline__author meta-author" href="#">{{ $post->autor }}</a></div>
+                        <figure class="figure"><img src="{{ url('images/'.$post->imagem) }}" alt="" width="1500" height="1000"/>
                         </figure>
-                        <p>Welcome to our wonderful world. We sincerely hope that each and every user entering our website will find exactly what he/she is looking for. With advanced features of activating account and new login widgets, you will definitely have a great experience of using our web page.</p>
+                        <p>{!! $post->conteudo !!}</p>
                 </section>
                 </div>
             </div>

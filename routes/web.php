@@ -21,7 +21,7 @@ Route::get('/', 'HomeController@index')->name('site.index');
 Route::get('/portfolio', 'HomeController@portfolio')->name('site.portfolio');
 Route::get('/contato', 'HomeController@contato')->name('site.contato');
 Route::get('/artigos', 'HomeController@artigos')->name('site.artigos');
-Route::get('/artigos/post', 'HomeController@post')->name('site.post');
+Route::get('/artigos/{id}', 'HomeController@post')->name('site.post');
 
 Route::post('/envio-contato', 'HomeController@envioContato')->name('site.envio-contato');
 Route::post('/envio-comentario', 'HomeController@envioComentario')->name('site.envio-comentario');

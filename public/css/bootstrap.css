@@ -637,6 +637,14 @@ pre code {
   -webkit-box-orient: vertical;
 }
 
+.post .post-info{
+	position: relative;
+	top: 15px;
+}
+.post p{
+	text-align: justify;
+}
+
 .col {
 	flex-basis: 0;
 	flex-grow: 1;
